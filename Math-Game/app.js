@@ -92,7 +92,7 @@ $(()=>{
   });
 
   // only allows numeric digits to be entered and space bar submit is working! >;D
-  $('.text').on('keypress',function (press) {
+  $('.text').on('keypress, keyup',function (press) {
     $(this).val($(this).val().replace(/[^\d].+/, ''));
     if (press.which < 48 && press.which !==13 || press.which > 57) {
       press.preventDefault();
