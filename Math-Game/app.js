@@ -91,13 +91,12 @@ $(()=>{
     $score.html(score);
   });
 
-  // only allows numeric digits to be entered.
-  // need to allow space key (code 13)
-  // $('.text').on('keypress',function (press) {
-  //   $(this).val($(this).val().replace(/[^\d].+/, ''));
-  //   if ((press.which < 48 || press.which > 57)) {
-  //     press.preventDefault();
-  //   }
-  // });
+  // only allows numeric digits to be entered and space bar submit is working! >;D
+  $('.text').on('keypress',function (press) {
+    $(this).val($(this).val().replace(/[^\d].+/, ''));
+    if (press.which < 48 && press.which !==13 || press.which > 57) {
+      press.preventDefault();
+    }
+  });
 
 });
