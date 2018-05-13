@@ -1,0 +1,68 @@
+body{
+  font-family: 'Space Mono', monospace;
+}
+
+ .timer {
+  background-color: dodgerBlue;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  margin: 30px auto;
+}
+.time{
+  font-size: 70px;
+  margin-left: 1.5vw;
+  margin-top: 10vh;
+  padding: 10px;
+  padding-top: 20px;
+  color: white;
+}
+
+.container{
+  text-align: center;
+}
+
+.ready{
+  font-size: 50px;
+  margin-left: 1.5vw;
+}
+
+.go{
+  width: 15vw;
+  height: 5vh;
+  font-size: 20px;
+  margin-left: 1vw;
+  background-color: dodgerBlue;
+  color: white;
+}
+.sum{
+  font-size: 38px;
+  font-weight: lighter;
+  margin-top: 3vh;
+}
+form{
+  margin-left: 5vw;
+}
+.text{
+  border: dodgerBlue 2px solid;
+  height: 5vh;
+  font-size: 20px;
+}
+.next-level{
+  margin-left: 41vw;
+  margin-top: 5vh;
+}
+
+#next, #retry{
+  height: 3.5rem;
+  width: 8rem;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: lighter;
+}
+#next{
+  border: 2px solid green;
+}
+#retry{
+  border: 2px solid red;
+}
